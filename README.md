@@ -18,7 +18,9 @@ This is the best tutorial on this topic:
 
 https://www.ronja-tutorials.com/2019/05/11/dithering.html
 
-In my case I have only a 2D Texture to postprocess, so I apply a repetitive "pattern" of pixels that blends slightly with rendered texture. This generates some blended colors that will be eliminated by Color Palettes.
+In my case I have only a 2D Texture to postprocess, so I apply a repetitive "pattern" of pixels that blends slightly with rendered texture. This generates some blended colors that will be eliminated by Color Palettes, or they will remain... and form some kind of dithering.
+
+Downside? Everything gets dithered.
 
 ## Color Palettes
 Our world is full of colors. Our screens can show more than 16 milion colors because we use 8 bits for each color (R, G, B). If we used less bits, we could get different palette of colors. To scale float representation of color in GLSL to some different palette I use:
@@ -28,5 +30,17 @@ Our world is full of colors. Our screens can show more than 16 milion colors bec
 For red... and for other colors too!
 
 This is relatively simple solution, especially if we don't have predefined palette. I also multiply formula above by some float to achieve tint.
+
+## Some examples
+
+![](crispy1.gif)
+
+![](crispy2.gif)
+
+![](crispy3.gif)
+
+![](crispy4.gif)
+
+
 
 
