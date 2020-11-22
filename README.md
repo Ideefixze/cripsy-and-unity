@@ -34,12 +34,10 @@ This is relatively simple solution, especially if we don't have predefined palet
 ## Some examples
 
 ![](crispy1.gif)
+Lower Resolution, soft dithering.
 
 ![](crispy2.gif)
-
-![](crispy3.gif)
-
-![](crispy4.gif)
+Higher resolution and global color tint.
 
 
 
