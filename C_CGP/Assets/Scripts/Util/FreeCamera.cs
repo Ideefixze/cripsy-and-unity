@@ -5,6 +5,7 @@ using System.Text;
 using UnityEngine;
 
 /// <summary>
+/// External code!
 /// A simple free camera to be added to a Unity game object.
 /// 
 /// Keys:
