@@ -35,11 +35,11 @@ This is relatively simple solution, especially if we don't have predefined palet
 
 ![](crispy1.gif)
 
+Lower resolution and smaller palette.
+
 ![](crispy2.gif)
 
-![](crispy3.gif)
-
-![](crispy4.gif)
+Higher resolution, large palette and global color tint.
 
 
 
