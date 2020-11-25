@@ -41,6 +41,8 @@ Lower resolution and smaller palette.
 
 Higher resolution, large palette and global color tint.
 
+## Hardware limitations
 
+If going for more old hardware look consider using: https://github.com/dsoft20/psx_retroshader this would provide much better alternative than mine solution. I've started adapting some vertice snapping with surface shader and this doesn't work well together as surface shader does "UnityObjectToViewPos" multiplication. Then it is only possible to apply some post-render vertex function. 
 
-
+I've added a small VertexSnap shader (simple override of default surface shader but with vertex snapping), but this is just temporary.
