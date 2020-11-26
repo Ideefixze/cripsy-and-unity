@@ -12,7 +12,7 @@ public class PixelatedLook : MonoBehaviour
     private Material[] pixelateEffects;
     protected void Start()
     {
-
+        
     }
     void Update()
     {
