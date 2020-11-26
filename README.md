@@ -61,4 +61,9 @@ https://en.wikipedia.org/wiki/Shadow_mapping
 Very popular photoshop effect that gives vintage vibe, can be also used here. Remember that it should be used before our Palette shader or it will create colors that should not exist. This is done by getting a color (R,G or B) from different position and applying it to this position on our 2D image.
 
 ![](crispy3.gif)
+
+Before Palette post-processing effect.
+
 ![](crispy4.gif)
+
+After Palette post-processing effect. 
