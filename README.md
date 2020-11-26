@@ -41,8 +41,19 @@ Lower resolution and smaller palette.
 
 Higher resolution, large palette and global color tint.
 
-## Hardware limitations
+# Faking older hardware
+## Low-poly and snapped vertices
 
-If going for more old hardware look consider using: https://github.com/dsoft20/psx_retroshader this would provide much better alternative than mine solution. I've started adapting some vertice snapping with surface shader and this doesn't work well together as surface shader does "UnityObjectToViewPos" multiplication. Then it is only possible to apply some post-render vertex function. 
+It's pretty easy for our machines to render a lot of complicated objects with very precisely. Older hardware couldn't do it. So using lowpoly assets is a obvious reason to fulfil our needs. Sometimes we also can snap vertices so it looks like we are using less bits for representing 3D space.
+
+Consider using: https://github.com/dsoft20/psx_retroshader this would provide much better alternative than mine solution. I've started adapting some vertice snapping with surface shader and this doesn't work well together as surface shader does "UnityObjectToViewPos" multiplication. Then it is only possible to apply some post-render vertex function. 
 
 I've added a small VertexSnap shader (simple override of default surface shader but with vertex snapping), but this is just temporary.
+
+## Shadows and lightning
+
+Older games had a problem with implementing light as it was time costly. Use Unity's internal systems with care. Many light sources won't make our scene look good and retro. Restricting yourself with one directional light should be fine.
+
+Here is how Unity implements shadows:
+https://docs.unity3d.com/560/Documentation/Manual/ShadowOverview.html
+https://en.wikipedia.org/wiki/Shadow_mapping
