@@ -903,8 +903,8 @@ MonoBehaviour:
   Width: 320
   pixelateEffects:
   - {fileID: 2100000, guid: a99edc68aba0ac549ba82f29be01902b, type: 2}
-  - {fileID: 2100000, guid: 460909b3092e92e409b4c7350607bf16, type: 2}
   - {fileID: 2100000, guid: 209e70084483cc54185614366447df41, type: 2}
+  - {fileID: 2100000, guid: 460909b3092e92e409b4c7350607bf16, type: 2}
 --- !u!1 &2138586325
 GameObject:
   m_ObjectHideFlags: 0
