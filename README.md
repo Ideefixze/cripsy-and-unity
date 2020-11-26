@@ -55,3 +55,10 @@ Older games had a problem with implementing light as it was time costly. Use Uni
 Here is how Unity implements shadows:
 https://docs.unity3d.com/560/Documentation/Manual/ShadowOverview.html
 https://en.wikipedia.org/wiki/Shadow_mapping
+
+## RGB Split
+
+Very popular photoshop effect that gives vintage vibe, can be also used here. Remember that it should be used before our Palette shader or it will create colors that should not exist. This is done by getting a color (R,G or B) from different position and applying it to this position on our 2D image.
+
+![](crispy3.gif)
+![](crispy4.gif)
